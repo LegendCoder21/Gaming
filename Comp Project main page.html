@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Games! </title>    
+    </head>
+<body bgcolor="#901212">
+    <script>
+        function Minecraftlike(){
+            alert("Good to hear that you liked Minecraf! Scroll down to see more games like it!");
+            var output = "Some other games you might like:<br>Terraria<br>Dragon Quest Builders 2<br>Starbound<br>The Legend Of Zelda: Breath Of The Wild<br>Lego Worlds"
+            document.getElementById("output1").innerHTML = output.fontsize(5)
+        }
+        function Fortnitelike(){
+            alert("Good to hear that you liked Fortnite! Scroll down to see more games like it!");
+            var output = "Some other games you might like:<br>Rules of Survival<br>Call of Duty<br>Garena Free Fire<br>Apex Legends<br>Realm Royale"
+            document.getElementById("output2").innerHTML = output.fontsize(5)
+        }
+        function Minecraftdislike(){
+            alert("We're verry sorry, your opinion will definitely be taken in to account")
+        }
+        function Fortnitedislike(){
+            alert("We're verry sorry, your opinion will definitely be taken in to account")
+        }
+    </script>
+    <center><font face="Algerian" size=40><u>GAMES YOU MUST PLAY!</u></font></center>
+    <hr color="#253B8B"  style="height: 10">
+    <center><marquee direction="right" bgcolor="#90121" width=80% scrollamount=16><font face="Agency fb" size=15>Popular games</font></marquee></center>
+    <br>
+    <table border=2>
+        <tr>
+            <td><font face="Agency fb" size=25>Minecraft</font></td>
+            <td><img src="https://lh3.googleusercontent.com/yAtZnNL-9Eb5VYSsCaOC7KAsOVIJcY8mpKa0MoF-0HCL6b0OrFcBizURHywpuip-D6Y"></td>
+            <td><a href="2nd page.html"><font face="Agency fb" size=5 color="000000">Click here for more information</font></a></td>
+            <td><center><button type="button" onclick="Minecraftlike()"><font size=6.5>👍</font></button> <button type="button" onclick="Minecraftdislike()"><font size=6.5>👎</font></button></center></td>
+        </tr>
+        <tr>
+            <td><font face="Agency fb" size=25>Fortnite</font></td>
+            <td><img src="https://images.firstpost.com/wp-content/uploads/2018/05/Fortnite.jpg" width=515 height=275></td>
+            <td><a href="3rd page.html"><font face="Agency fb" size=5 color="000000">Click here for more information</font></a></td>
+            <td><center><button type="button" onclick="Fortnitelike()"><font size=6.5>👍</font></button> <button type="button" onclick="Fortnitedislike()"><font size=6.5>👎</font></button></center></td>
+        </tr>
+    </table>
+    <h3 id="output1"></h3> 
+    <h3 id="output2"></h3>  
+</body>    
+</html>
